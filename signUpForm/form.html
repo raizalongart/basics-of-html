@@ -21,6 +21,7 @@
                             name="firstName"
                             id="firstName"
                             value=""
+                            autocomplete="given-name"
                             required
                         />
                     </li>
@@ -31,16 +32,30 @@
                             name="lastName"
                             id="lastName"
                             value=""
+                            autocomplete="family-name"
                             required
                         />
                     </li>
                     <li>
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" value="" required/>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            value="" 
+                            autocomplete="email" 
+                            required
+                        />
                     </li>
                     <li>
                         <label for="birthday">Birthday:</label>
-                        <input type="date" id="birthday" name="birthday" required/>
+                        <input 
+                            type="date" 
+                            id="birthday" 
+                            name="birthday" 
+                            autocomplete="bday" 
+                            required
+                        />
                     </li>
                     <li>
                         <label for="sport">Select your favourite sport:</label>
@@ -63,8 +78,8 @@
                             rows="3"
                         ></textarea>
                     </li>
-                    <li><input type="submit" value="submit" /></li>
-                    <li><input type="reset" value="reset" /></li>
+                    <li><button type="submit">Submit</button></li></li>
+                    <li><button type="reset">Reset</button></li>
                 </ul>
             </form>
         </main>
